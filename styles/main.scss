@@ -1,0 +1,20 @@
+//main
+@import 'base/normalize',
+        'base/customreset',
+        'base/colors',
+        'base/typography',
+        'base/gradient';
+// components
+@import 'components/general.scss',
+
+        'components/scr-wrapper.scss',
+        'components/scr-chapters.scss',
+        'components/scr-header.scss',
+
+        'components/form-general.scss',
+
+        'components/form-ul-checkbox-text.scss',
+        'components/form-ul-checkbox-images.scss',
+
+        'components/form-ul-input-text.scss',
+        'components/form-ul-select-text.scss';

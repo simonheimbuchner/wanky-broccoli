@@ -1,0 +1,23 @@
+// main: ../main.scss
+
+.scr-header {
+  overflow: hidden;
+  height: 130px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  // 100vw and -50px repositions the header to the very left of the document
+  // (against inheritance from scr-wrapper)
+  width: 100vw;
+  margin-left: -50px;
+
+  @include gradient-topdark;
+  border-bottom: 2px solid $color-red;
+
+  div[data-position="left"] {
+
+  }
+  div[data-position="right"] {
+    width: 60%;
+    margin-left: 40%;
+  }
+}

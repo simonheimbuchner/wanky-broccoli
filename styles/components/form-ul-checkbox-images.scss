@@ -1,0 +1,6 @@
+// main: ../main.scss
+ul[data-purpose=choose-images] {
+  input[type="checkbox"], img {
+    width: 100px;
+  }
+}

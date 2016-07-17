@@ -1,0 +1,35 @@
+// main: ../main.scss
+@import 'https://fonts.googleapis.com/css?family=Space+Mono';
+body {
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+}
+
+q {
+  quotes: '«' '»';
+}
+q::before {
+  content: open-quote;
+}
+q::after {
+  content: close-quote;
+}
+
+
+h4 { // small headline
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+h2, label {
+  color: $color-mint;
+  font-size: 1.125em; // 18pt
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+p { // running text
+  font-size: 1em;
+  font-weight: normal;
+}

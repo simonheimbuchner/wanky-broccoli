@@ -1,0 +1,25 @@
+// main: ../main.scss
+ul[data-purpose="select-text"] {
+  li {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid $color-red;
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-appearance: inherit;
+    opacity: 0.6;
+
+  }
+  input[type="checkbox"]:not(:checked) {
+    @include gradient-topbright;
+  }
+  input[type="checkbox"]:checked  {
+
+  }
+}

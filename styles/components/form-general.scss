@@ -1,0 +1,13 @@
+// main: ../main.scss
+[data-state=inactive] {
+  pointer-events: none;
+  opacity: .6;
+}
+
+input:not([type=checkbox]), select {
+  height: 50px;
+  border: 1px solid $color-red;
+  padding: 5px;
+  box-sizing: border-box;
+  @include gradient-topdark;
+}

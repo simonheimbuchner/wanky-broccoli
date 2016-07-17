@@ -1,0 +1,24 @@
+// main: ../main.scss
+ul[data-purpose="input-text"] {
+  li {
+    margin: 10px 0;
+    position: relative;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    @include gradient-topbright;
+  }
+  label {
+    line-height: 50px;
+    height: 50px;
+    display: block;
+    width: 120px;
+    float: left;
+  }
+  input, select {
+    width: 130px;
+  float: right;
+  }
+
+}
