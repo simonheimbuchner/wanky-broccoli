@@ -5,16 +5,32 @@
         'base/typography',
         'base/gradient';
 // components
-@import 'components/general.scss',
+@import 'components/general',
 
-        'components/scr-wrapper.scss',
-        'components/scr-chapters.scss',
-        'components/scr-header.scss',
+        'components/scr-wrapper',
+        'components/scr-chapters',
+        'components/scr-header',
+        'components/scr-btnnext',
 
-        'components/form-general.scss',
+        'components/form-general',
 
-        'components/form-ul-checkbox-text.scss',
-        'components/form-ul-checkbox-images.scss',
+        'components/form-ul-checkbox-text',
+        'components/form-ul-checkbox-images',
 
-        'components/form-ul-input-text.scss',
-        'components/form-ul-select-text.scss';
+        'components/form-ul-input-text',
+        'components/form-ul-select-text';
+
+
+// scrollable/not scrollable page
+/*
+
+body {
+  overflow: hidden;
+}
+section[role=scr-wrapper] {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+*/
