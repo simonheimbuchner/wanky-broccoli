@@ -1,35 +1,42 @@
 // main: ../main.scss
-@import 'https://fonts.googleapis.com/css?family=Space+Mono';
-body {
-  font-size: 16px;
-  font-family: 'Space Mono', monospace;
+@import 'https://fonts.googleapis.com/css?family=Ubuntu+Mono';
+
+@mixin typo-label-uppercase {
+    color: $color-mint;
+    font-size: 1.125em; // 18pt
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@mixin typo-label-lowercase {
+    text-transform: lowercase;
+    color: $color-black;
 }
 
+body {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu Mono', monospace;
+}
 q {
-  quotes: '«' '»';
+    quotes: '«' '»';
 }
 q::before {
-  content: open-quote;
+    content: open-quote;
 }
 q::after {
-  content: close-quote;
+    content: close-quote;
+}
+h4 {
+    // small headline
+    font-size: 1.25em;
+    font-weight: bold;
+}
+h2 {
+    @include typo-label-uppercase;
 }
 
-
-h4 { // small headline
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-h2, label {
-  color: $color-mint;
-  font-size: 1.125em; // 18pt
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-
-p { // running text
-  font-size: 1em;
-  font-weight: normal;
+p {
+    // running text
+    font-size: 1em;
+    font-weight: normal;
 }

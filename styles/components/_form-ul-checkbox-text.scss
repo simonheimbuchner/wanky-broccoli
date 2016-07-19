@@ -1,6 +1,27 @@
 // main: ../main.scss
-ul[data-purpose=choose-text] {
-  input[type=checkbox] {
+ul[data-purpose="checkbox-text"] {
+    width: 60%;
+    margin-left: 40%;
+    li {
+        @include typo-label-lowercase;
+    }
+    input[type="checkbox"] {
+        -webkit-appearance: inherit;
+    }
+    input[type="checkbox"]::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 12px;
+      margin-top: -12px;
+      height: 12px;
+      margin-left: -31px;
+      background-color: $color-mint;
+      border-radius: 12px 12px 12px 12px;
+      border: 1px solid $color-black;
+    }
 
-  }
+    input[type="checkbox"]::checked input[type="checkbox"]::before {
+      background-color: $color-red;
+    }
 }
