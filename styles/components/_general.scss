@@ -9,7 +9,6 @@ input[type=checkbox]:focus {
 li {
   position: relative;
 }
-
 #img-08 {
   margin-top: 20px;
   width: 100vw;
@@ -17,6 +16,6 @@ li {
   height: 200px;
   background-color: $color-slateblue;
   background-size: 100%;
-background-repeat: no-repeat;
-background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }

@@ -11,21 +11,4 @@ ul[data-purpose=choose-images] {
   input[type="checkbox"] {
     width: 100%;
   }
-
-/*
-    img,
-    input[type="checkbox"] {
-        width: 100px;
-    }
-    input[type="checkbox"] {
-        -webkit-appearance: none;
-    }
-    input[type="checkbox"]::before {
-        @include checkbox-before;
-        content: '';
-        position: relative;
-        margin-left: 70px;
-        margin-bottom: 18px;
-    }
->>>>>>> refs/remotes/origin/master*/
 }

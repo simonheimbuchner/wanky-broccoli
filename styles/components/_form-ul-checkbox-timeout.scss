@@ -1,16 +1,19 @@
 // main: ../main.scss
 div[data-behaviour="checkbox-timeout"] {
     ul[data-purpose="checkbox-select"] {
+        margin-bottom: 20px;
         li {
+          margin-top: 20px;
+          margin-left: 40%;
+
           input[type="checkbox"] {
               -webkit-appearance: none;
-          }
-          input[type="checkbox"] {
               @include checkbox-before;
               content: '';
               position: relative;
-              margin-left: 70px;
-              margin-bottom: 18px;
+          }
+          input[type=checkbox]:checked {
+            @include checkbox-before-active;
           }
         }
     }
