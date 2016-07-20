@@ -1,6 +1,13 @@
 // main: ../main.scss
+// lots of infos in styles/components/_form-ul-select-text.scss
 ul[data-purpose=choose-images] {
-  input[type="checkbox"], img {
-    width: 100px;
+  li {
+    overflow: hidden;
+    height: 150px;
+    padding: 0 !important;
+  }
+  img,
+  input[type="checkbox"] {
+    width: 100%;
   }
 }

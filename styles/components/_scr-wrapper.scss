@@ -9,4 +9,5 @@ section[role=scr-wrapper] {
   @include gradient-body;
   // hack, prevents top to appear white
   padding-top: 0.1px;
+  border-bottom: 4px solid $color-red;
 }

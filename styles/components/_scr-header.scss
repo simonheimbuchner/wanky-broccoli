@@ -1,23 +1,49 @@
 // main: ../main.scss
-
 .scr-header {
-  overflow: hidden;
   height: 130px;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 50px;
   // 100vw and -50px repositions the header to the very left of the document
   // (against inheritance from scr-wrapper)
   width: 100vw;
   margin-left: -50px;
-
-  @include gradient-topdark;
+  @include gradient-header;
   border-bottom: 2px solid $color-red;
-
   div[data-position="left"] {
-
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-image: url('../resources/img/glubsch.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
   }
   div[data-position="right"] {
-    width: 60%;
-    margin-left: 40%;
+    margin-top: 14px;
+    width: 50%;
+    margin-left: 50%;
   }
+}
+.scr-header::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  border-top: 2px solid #d9c9cc;
+  border-bottom: 2px solid #d9c9cc;
+  height: 25px;
+  @include gradient-topbrightstrong;
+}
+.scr-header::after {
+  content: '';
+  position: relative;
+  background-size: 86%;
+  background-repeat: no-repeat;
+  background-image: url("../resources/img/ranken.png");
+  width: 100%;
+  height: 170px;
+  display: block;
+  pointer-events: none;
+  margin-top: -152px;
+  opacity: .5;
 }

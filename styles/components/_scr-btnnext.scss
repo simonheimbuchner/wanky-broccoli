@@ -1,9 +1,10 @@
 // main: ../main.scss
 .scr-btnnext {
   width: 100%;
-  @include gradient-topbright;
+
+  background-color: $color-mint;
   border: 2px solid $color-red;
-  margin: 40px 0 80px 0;
+  margin: 40px 0 40px 0;
   text-align: center;
   cursor: pointer;
 }

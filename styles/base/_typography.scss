@@ -21,15 +21,25 @@ h4 { // small headline
   font-weight: bold;
 }
 
-h2, label {
+h2 {
   color: $color-mint;
   font-size: 1.125em; // 18pt
   text-transform: uppercase;
   font-weight: bold;
+
+  -webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
 }
 
 
 p { // running text
   font-size: 1em;
   font-weight: normal;
+
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
 }
