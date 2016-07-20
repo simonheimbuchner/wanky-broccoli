@@ -13,7 +13,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 1px;
     font-family: 'Ubuntu Mono', monospace;
 }
@@ -23,6 +23,7 @@ q {
 a {
   color: $color-mint;
   font-weight: bold;
+  text-decoration: none;
 }
 q::before {
     content: open-quote;
@@ -53,4 +54,11 @@ h2 {
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
+}
+
+h4 {
+  -webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
 }

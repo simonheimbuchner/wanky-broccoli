@@ -14,9 +14,10 @@
 }
 
 
+
 [data-state=inactive] {
     pointer-events: none;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 input:not([type=checkbox]),
 select {

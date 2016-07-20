@@ -1,7 +1,9 @@
 // main: ../main.scss
 .scr-btnnext {
   width: 100%;
-
+  height: 40px;
+line-height: 40px;
+  color: $color-lightgrey;
   background-color: $color-mint;
   border: 2px solid $color-red;
   margin: 40px 0 40px 0;
