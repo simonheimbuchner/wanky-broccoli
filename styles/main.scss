@@ -24,13 +24,13 @@
 
 // scrollable/not scrollable page
 //
-//
-// body {
-//   overflow: hidden;
-// }
-// section[role=scr-wrapper] {
-//   overflow-y: scroll;
-// }
-// ::-webkit-scrollbar {
-//     display: none;
-// }
+
+body {
+  overflow: hidden;
+}
+section[role=scr-wrapper] {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
