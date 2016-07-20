@@ -1,13 +1,28 @@
 // main: ../main.scss
-[data-state=inactive] {
-  pointer-events: none;
-  opacity: .6;
+@mixin checkbox-before {
+  width: 18px;
+  margin-top: -18px;
+  height: 18px;
+  margin-left: -31px;
+  background-color: $color-mint;
+  border-radius: 18px 18px 18px 18px;
+  border: 2px solid $color-black;
+}
+@mixin checkbox-before-active {
+  background-color: $color-red;
+  border: 2px solid $color-black;
 }
 
-input:not([type=checkbox]), select {
-  height: 50px;
-  border: 1px solid $color-red;
-  padding: 5px;
-  box-sizing: border-box;
-  @include gradient-topdark;
+
+[data-state=inactive] {
+    pointer-events: none;
+    opacity: 0.6;
+}
+input:not([type=checkbox]),
+select {
+    height: 50px;
+    border: 1px solid $color-red;
+    padding: 5px;
+    box-sizing: border-box;
+    @include gradient-topdark;
 }

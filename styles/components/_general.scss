@@ -3,3 +3,9 @@
   outline-color: $color-red;
   outline-width: 4px;
 }
+input[type=checkbox]:focus {
+  outline: none;
+}
+li {
+  position: relative;
+}

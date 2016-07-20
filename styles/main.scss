@@ -16,20 +16,21 @@
 
         'components/form-ul-checkbox-text',
         'components/form-ul-checkbox-images',
+        'components/form-ul-checkbox-timeout',
 
         'components/form-ul-input-text',
         'components/form-ul-select-text';
 
 
 // scrollable/not scrollable page
-
-
-body {
-  overflow: hidden;
-}
-section[role=scr-wrapper] {
-  overflow-y: scroll;
-}
-::-webkit-scrollbar {
-    display: none;
-}
+//
+//
+// body {
+//   overflow: hidden;
+// }
+// section[role=scr-wrapper] {
+//   overflow-y: scroll;
+// }
+// ::-webkit-scrollbar {
+//     display: none;
+// }

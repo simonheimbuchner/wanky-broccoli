@@ -1,6 +1,23 @@
 // main: ../main.scss
-ul[data-purpose=choose-text] {
-  input[type=checkbox] {
 
-  }
+ul[data-purpose="checkbox-text"] {
+  margin-top: 30px;
+    width: 60%;
+    margin-left: 40%;
+    li {
+        @include typo-label-lowercase;
+        margin-bottom: 18px;
+    }
+    label {
+      margin-left: 10px;
+    }
+    input[type="checkbox"] {
+      -webkit-appearance: inherit;
+      @include checkbox-before;
+    }
+    input[type=checkbox]:checked {
+      @include checkbox-before-active;
+    }
+
+
 }
