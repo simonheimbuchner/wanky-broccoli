@@ -1,4 +1,8 @@
 //main
+
+@media only screen and (max-width: 375px) {
+
+
 @import 'base/normalize',
         'base/customreset',
         'base/colors',
@@ -23,14 +27,19 @@
 
 
 // scrollable/not scrollable page
-//
-//
-// body {
-//   overflow: hidden;
-// }
-// section[role=scr-wrapper] {
-//   overflow-y: scroll;
-// }
-// ::-webkit-scrollbar {
-//     display: none;
-// }
+
+
+body {
+  overflow: hidden;
+}
+section[role=scr-wrapper] {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+}
+@media only screen and (min-width: 376px) {
+  display: none;
+}
